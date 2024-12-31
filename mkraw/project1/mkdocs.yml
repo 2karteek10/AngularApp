@@ -1,0 +1,15 @@
+site_name: Project 1 Documentation
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Code Documentation: code_documentation.md
+  - How-To Guides: how_to_guides.md
+  - Knowledge Base Articles: kba.md
+  - Architecture: architecture.md
+  - Examples: examples.md
+  - Contact: contact.md
+plugins:
+  - search
+  - awesome-pages
+  - glightbox

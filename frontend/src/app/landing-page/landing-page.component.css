@@ -1,0 +1,19 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+}
+
+.search-field {
+  width: 300px;
+}
+
+.mat-table {
+  width: 100%;
+}
