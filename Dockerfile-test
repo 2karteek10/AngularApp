@@ -1,0 +1,14 @@
+# Stage 1: Build Angular application with updated Node.js version
+FROM node:18-slim AS angular-build
+
+# Set the working directory for the Angular build process
+WORKDIR /app
+
+# Copy Angular project files and install dependencies
+COPY frontend/package.json frontend/package-lock.json ./frontend/
+RUN cd frontend && npm install
+
+# Build the Angular project
+COPY frontend/ ./frontend
+RUN cd frontend && npm run build
+
